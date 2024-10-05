@@ -1,0 +1,47 @@
+syntax = "proto3";
+package smelt;
+
+service Smelt {
+	rpc Begin(BeginRequest) returns (BeginResponse);
+	rpc Get(GetRequest) returns (GetResponse);
+	rpc Put(PutRequest) returns (PutResponse);
+	rpc Delete(DeleteRequest) returns (DeleteResponse);
+	rpc Commit(CommitRequest) returns (CommitResponse);
+	rpc Abort(AbortRequest) returns (AbortResponse);
+};
+
+message BeginRequest {
+};
+
+message BeginResponse {
+};
+
+message GetResponse {
+};
+
+message GetRequest {
+};
+
+message PutResponse {
+};
+
+message PutRequest {
+};
+
+message DeleteRequest {
+};
+
+message DeleteResponse {
+};
+
+message CommitRequest {
+};
+
+message CommitResponse {
+};
+
+message AbortRequest {
+};
+
+message AbortResponse {
+};

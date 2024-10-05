@@ -1,0 +1,19 @@
+syntax = "proto3";
+package node;
+
+service Node {
+	rpc AppendEntries(AppendEntriesRequest) returns (AppendEntriesResponse);
+	rpc RequestVote(RequestVoteRequest) returns (RequestVoteResponse);
+};
+
+message AppendEntriesRequest {
+};
+
+message AppendEntriesResponse {
+};
+
+message RequestVoteRequest {
+};
+
+message RequestVoteResponse {
+};
